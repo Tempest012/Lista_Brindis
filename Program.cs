@@ -46,14 +46,18 @@ namespace MyApp // Note: actual namespace depends on the project name.
 
                         case 4:
                         Console.WriteLine("Usted eligió la opción 4");
-
+                        Console.WriteLine("Dame la posición nodo");
+                        int posicion=Convert.ToInt32(Console.ReadLine());
+                        lista.Delete(posicion);
                         break;
 
                         case 5:
                         Console.WriteLine("Usted eligió la opción 5");
                         Console.WriteLine("Dame posición");
                         int pos=Convert.ToInt32(Console.ReadLine());
-                        lista.Changer(pos);
+                        Console.WriteLine("Ingrese el nuevo valor para nodo");
+                        int nuevoValor = Convert.ToInt32(Console.ReadLine());
+                        lista.Changer(pos,nuevoValor);
                         break;
 
                         case 6:
